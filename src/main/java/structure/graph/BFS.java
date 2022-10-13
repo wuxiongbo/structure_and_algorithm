@@ -1,4 +1,4 @@
-package src.main.java.structure.graph;
+package structure.graph;
 
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;

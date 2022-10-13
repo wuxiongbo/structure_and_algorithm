@@ -1,5 +1,4 @@
-package src.main.java.structure.list.arraylist;
-
+package structure.list.arraylist;
 
 public class MyArrayList<E> implements MyList<E> {
 

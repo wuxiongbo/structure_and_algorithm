@@ -1,4 +1,4 @@
-package src.main.java.structure.arrays;
+package structure.arrays;
 
 public class ArrayTest {
 	

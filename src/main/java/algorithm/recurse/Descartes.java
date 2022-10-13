@@ -1,6 +1,4 @@
-package src.main.java.algorithm.recurse;
-
-import org.jetbrains.annotations.NotNull;
+package java.algorithm.recurse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,7 +101,7 @@ public class Descartes {
      * @param curList  处于添加元素中间状态的List     cur  Current
      */
     //
-    private static void descartes2(@NotNull List<List<String>> dimValue,
+    private static void descartes2(List<List<String>> dimValue,
                                    List<List<String>> result,
                                    int layer,
                                    List<String> curList) {
@@ -146,7 +144,7 @@ public class Descartes {
      * @param layer    原List中的第几组数据(0开始数)
      * @param curList  处于添加元素中间状态的List
      */
-    private static List<List<String>> descartes3(@NotNull List<List<String>> dimValue,
+    private static List<List<String>> descartes3(List<List<String>> dimValue,
                                                  List<List<String>> result,
                                                  int layer,
                                                  List<String> curList) {

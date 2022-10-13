@@ -1,4 +1,4 @@
-package src.main.java.structure.list.linkllist;
+package structure.list.linkllist;
 
 // 双向链表
 public class DoubleLinkList {

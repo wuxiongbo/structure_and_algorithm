@@ -1,4 +1,4 @@
-package src.main.java.structure.arrays;
+package structure.arrays;
 
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;

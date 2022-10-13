@@ -1,4 +1,4 @@
-package src.main.java.structure.queue;
+package structure.queue;
 
 /**
  * @Author: Battle Bear

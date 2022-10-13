@@ -1,4 +1,4 @@
-package src.main.java.structure.list.arraylist;
+package structure.list.arraylist;
 
 public interface MyList<E> {
 	void add(E e);

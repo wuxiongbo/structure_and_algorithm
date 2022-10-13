@@ -1,6 +1,4 @@
-package src.main.java.algorithm.sort;
-
-import org.jetbrains.annotations.NotNull;
+package algorithm.sort;
 
 import java.util.Arrays;
 
@@ -15,7 +13,7 @@ public class QuiklySort {
 	 * @param left    左边开始找的位置
 	 * @param right   右边开始找的位置
 	 */
-	public static void qSort(@NotNull int data[], int left, int right) {
+	public static void qSort(int[] data, int left, int right) {
 
 		int base = data[left]; // base 基准数，取序列的第一个,不能用data[0]
 		int ll = left;  // 表示从左边开始找的位置
@@ -53,7 +51,7 @@ public class QuiklySort {
 
 	}
 
-	static void swap(int data[],int ll,int rr){
+	static void swap(int[] data, int ll, int rr){
 		int temp = data[rr];
 		data[rr] = data[ll];
 		data[ll] = temp;

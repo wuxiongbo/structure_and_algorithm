@@ -1,4 +1,4 @@
-package src.main.java.structure.stack;
+package structure.stack;
 
 import java.util.Scanner;
 

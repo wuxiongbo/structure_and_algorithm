@@ -1,4 +1,4 @@
-package src.main.java.algorithm.graph;
+package algorithm.graph;
 
 import java.util.Arrays;
 import java.util.Random;

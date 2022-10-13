@@ -1,4 +1,4 @@
-package src.main.java.structure.arrays;
+package structure.arrays;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

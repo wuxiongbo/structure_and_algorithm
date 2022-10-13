@@ -1,4 +1,4 @@
-package src.main.java.structure.list.joseph;
+package structure.list.joseph;
 
 
 import java.util.Arrays;
@@ -18,37 +18,37 @@ public class PersonNodeList {
 
     public static void main(String[] args) {
 //        int n=6,k=1,m=5;
-        int n=41,k=1,m=3;
+        int n = 41, k = 1, m = 3;
         PersonNodeList app = new PersonNodeList();
         app.initList(n);
-        PersonNode one= app.getResult(k,m);
+        PersonNode one = app.getResult(k, m);
         System.out.println(one.number);
         System.out.println(Arrays.toString(arr));
     }
 
     //每次新添加的指针指向头。
-    public void initList(int n){
-        arr= new int[n];
+    public void initList(int n) {
+        arr = new int[n];
         PersonNode cur = null;//指向最新增加的结点；
         for (int i = 1; i <= n; i++) {
             PersonNode newNode = new PersonNode(i);
-            if(i == 1){
-                head=newNode;
-            }else{
-                cur.next=newNode;
+            if (i == 1) {
+                head = newNode;
+            } else {
+                cur.next = newNode;
             }
-            newNode.next=head; //指向头，形成环
-            cur=newNode;
+            newNode.next = head; //指向头，形成环
+            cur = newNode;
         }
     }
 
-    public PersonNode getResult(int k,int m){
+    public PersonNode getResult(int k, int m) {
 
         PersonNode t = head; //t 代表 startNumber
 
         //找到指定编号的结点作为开始结点。
-        for(;;){
-            if(t.number == k){
+        for (; ; ) {
+            if (t.number == k) {
                 break;
             }
             t = t.next;
@@ -61,39 +61,39 @@ public class PersonNodeList {
         }
 
         //移除t指向的结点。
-         // a)t是仅剩的一个结点 b)t是头结点 c)t是普通结点
-        for(;;){
-            if(t.next==t){
-                arr[index]=t.number;
+        // a)t是仅剩的一个结点 b)t是头结点 c)t是普通结点
+        for (; ; ) {
+            if (t.next == t) {
+                arr[index] = t.number;
                 return t;
             }
             PersonNode prev = findPrev(t);
-            if(t==head){    //如果t是头结点
-                head=t.next;//先更新头指针
+            if (t == head) {    //如果t是头结点
+                head = t.next;//先更新头指针
             }
             PersonNode r = t;//临时记录即将被回收的结点
 
-            prev.next=t.next;
+            prev.next = t.next;
             t = t.next;  //下一个结点作为开始数数的结点
             //再数m声
             for (int i = 1; i < m; i++) {
                 t = t.next;
             }
 
-            arr[index]=r.number;
+            arr[index] = r.number;
             index++;
-            r.next=null;
+            r.next = null;
 
         }
 
     }
 
-    public PersonNode findPrev(PersonNode node){
-        PersonNode t=head;
-        for (;;){
-            if(t.next==node){
+    public PersonNode findPrev(PersonNode node) {
+        PersonNode t = head;
+        for (; ; ) {
+            if (t.next == node) {
                 return t;
-            }else{
+            } else {
                 t = t.next;
             }
         }

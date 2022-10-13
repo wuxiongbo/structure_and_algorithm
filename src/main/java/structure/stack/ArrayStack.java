@@ -1,4 +1,4 @@
-package src.main.java.structure.stack;
+package structure.stack;
 
 public class ArrayStack<Item> implements MyStack<Item> {
 	
@@ -53,10 +53,12 @@ public class ArrayStack<Item> implements MyStack<Item> {
 		return item;
 	}
 
+	@Override
 	public int size() {
 		return n;
 	}
 
+	@Override
 	public boolean isEmpty() {
 		return n == 0;
 	}

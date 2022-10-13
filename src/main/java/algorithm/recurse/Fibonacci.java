@@ -1,4 +1,4 @@
-package src.main.java.algorithm.recurse;
+package algorithm.recurse;
 
 /**
  * 递归 之 斐波那契

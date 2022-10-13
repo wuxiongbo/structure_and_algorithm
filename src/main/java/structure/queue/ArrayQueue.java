@@ -1,4 +1,4 @@
-package src.main.java.structure.queue;
+package structure.queue;
 
 import java.util.Arrays;
 
@@ -56,8 +56,9 @@ public class ArrayQueue {
 	//此实现存在一个问题，就是，有很大的空间浪费。图解，见文档
 	public int pop(){		//出队列 1 2 3 4 5 O(1)
 		//要判断空，怎么判断空？
-		if(isEmpty())
-		    return -1;		 //表示空
+		if(isEmpty()) {
+			return -1;		 //表示空
+		}
 		int m = data[head];  //先让元素出队，再自加。
         data[head]=null;     //将 出队的元素 所在位置清空。 也可以不清空。我个人觉得清空好点。
 		head ++ ;

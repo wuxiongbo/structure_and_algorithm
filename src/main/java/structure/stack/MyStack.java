@@ -1,4 +1,4 @@
-package src.main.java.structure.stack;
+package structure.stack;
 
 public interface MyStack<Item> {
 

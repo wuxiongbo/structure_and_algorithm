@@ -1,4 +1,4 @@
-package src.main.java.structure.queue;
+package structure.queue;
 
 /**
  * 基于 数组数据结构 实现的 环形队列算法

@@ -1,4 +1,4 @@
-package src.main.java.structure.heap;
+package structure.heap;
 
 import java.util.Arrays;
 

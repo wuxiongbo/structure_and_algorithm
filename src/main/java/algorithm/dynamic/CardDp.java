@@ -1,4 +1,4 @@
-package src.main.java.algorithm.dynamic;
+package algorithm.dynamic;
 
 /**
  * 动态规划  dynamic programming

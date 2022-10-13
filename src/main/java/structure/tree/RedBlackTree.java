@@ -1,4 +1,4 @@
-package src.main.java.structure.tree;
+package structure.tree;
 
 import java.util.Arrays;
 

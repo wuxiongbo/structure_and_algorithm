@@ -1,4 +1,4 @@
-package src.main.java.algorithm.greedy;
+package algorithm.greedy;
 
 import java.util.ArrayList;
 import java.util.List;
